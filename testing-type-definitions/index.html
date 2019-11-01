@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html data-html-server-rendered="true" lang="en" data-vue-tag="lang">
+  <head>
+    <title data-vue-tag="true">Testing Type Definitions - blog by Eamon</title><meta data-vue-tag="true" charset="utf-8"/><meta data-vue-tag="true" name="generator" content="Gridsome v0.5.4"/><meta data-vue-tag="true" data-key="viewport" name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/><meta data-vue-tag="true" data-key="description" name="description" content="While the world sleep I dream"/><meta data-vue-tag="true" data-key="format-detection" name="format-detection" content="telephone=no"/><meta data-vue-tag="true" name="description" content="What is xxx testing"/><link data-vue-tag="true" rel="icon" type="image/png" sizes="16x16" href="/assets/static/favicon.ce0531f.9410551.png"/><link data-vue-tag="true" rel="icon" type="image/png" sizes="32x32" href="/assets/static/favicon.ac8d93a.9410551.png"/><link data-vue-tag="true" rel="icon" type="image/png" sizes="96x96" href="/assets/static/favicon.b9532cc.9410551.png"/><link data-vue-tag="true" rel="apple-touch-icon" type="image/png" sizes="76x76" href="/assets/static/favicon.f22e9f3.9410551.png"/><link data-vue-tag="true" rel="apple-touch-icon" type="image/png" sizes="152x152" href="/assets/static/favicon.62d22cb.9410551.png"/><link data-vue-tag="true" rel="apple-touch-icon" type="image/png" sizes="120x120" href="/assets/static/favicon.1539b60.9410551.png"/><link data-vue-tag="true" rel="apple-touch-icon" type="image/png" sizes="167x167" href="/assets/static/favicon.dc0cdc5.9410551.png"/><link data-vue-tag="true" rel="apple-touch-icon" type="image/png" sizes="180x180" href="/assets/static/favicon.7b22250.9410551.png"/><noscript data-vue-tag="true" ><style>.g-image--loading{display:none;}</style></noscript><link rel="preload" href="/assets/css/styles.e9d230d7.css" as="style"><link rel="preload" href="/assets/js/app.69f85a1e.js" as="script"><link rel="preload" href="/assets/css/3.styles.ba5ac8e9.css" as="style"><link rel="preload" href="/assets/js/component--post.d78ecd08.js" as="script"><link rel="prefetch" href="/assets/js/component--404.aa2bec49.js"><link rel="prefetch" href="/assets/js/component--home.c4b2dc7c.js"><link rel="prefetch" href="/assets/js/component--tag.b6f9e22b.js"><link rel="prefetch" href="/assets/js/page-query.1a5a608d.js"><link rel="stylesheet" href="/assets/css/styles.e9d230d7.css"><link rel="stylesheet" href="/assets/css/3.styles.ba5ac8e9.css">
+  </head>
+  <body data-vue-tag="">
+    <script>
+      // Add dark / light detection that runs before Vue.js load. Borrowed from overreacted.io
+      (function() {
+        window.__onThemeChange = function() {};
+        function setTheme(newTheme) {
+          window.__theme = newTheme;
+          preferredTheme = newTheme;
+          document.body.setAttribute('data-theme', newTheme);
+          window.__onThemeChange(newTheme);
+        }
+
+        var preferredTheme;
+        try {
+          preferredTheme = localStorage.getItem('theme');
+        } catch (err) { }
+
+        window.__setPreferredTheme = function(newTheme) {
+          setTheme(newTheme);
+          try {
+            localStorage.setItem('theme', newTheme);
+          } catch (err) {}
+        }
+
+        var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        darkQuery.addListener(function(e) {
+          window.__setPreferredTheme(e.matches ? 'dark' : 'light')
+        });
+
+        setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
+      })();
+    </script>
+
+    <div id="app" data-server-rendered="true"><header class="header"><div class="header__left"><a href="/" class="logo active"><span class="logo__text">
+    ← blog by Eamon
+  </span></a></div><div class="header__right"><button role="button" aria-label="Toggle dark/light" class="toggle-theme"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></button></div></header><main class="main"><div class="post-title"><h1 class="post-title__text">
+      Testing Type Definitions
+    </h1><div class="post-meta">
+   Posted 30. October 2019.
+   <strong>5 min read.</strong></div></div><div class="post content-box"><div class="post__header"><!----></div><div class="post__content"><p>今天来分享下各种测试类型的定义：</p>
+<blockquote>
+<p>咳咳，本博客中英文混乱，轻拍🤪</p>
+</blockquote>
+<h3 id="what-is-performance-testing"><a href="#what-is-performance-testing" aria-hidden="true"><span class="icon icon-link"></span></a>What is Performance Testing?</h3>
+<p>Performance Testing is associated with a number of interchangeable names. The performance test can also referred to as a stress test, load testing or volume testing and is the application of a process that verifies the ability of a system to handle varying degrees of concurrent users and system transactions.  The Goals of performance testing are driven by a number of factors that could include business volumetric requirements and service level agreements (SLA) as well as perceived and actual performance risk.</p>
+<p>The volumetric requirements and SLAs are typically defined within a Performance Requirements section of a Non Functional Testing Requirements document.  Understanding performance risk helps to prioritise the objectives and scope of the non functional testing. During testing varying degrees of user and system transactions (the performance test workload) are executed concurrently. User and system response times are measured and referenced against the Non Functional requirements. During performance testing, system components are monitored to verify the stability of the system under test and to identity points that require performance tuning these include; The Network Media, System servers, Databases, Messaging providers, Disk arrays, and software components.</p>
+<h3 id="what-is-load-testing"><a href="#what-is-load-testing" aria-hidden="true"><span class="icon icon-link"></span></a>What is Load Testing?</h3>
+<p>Load testing is the process of executing a concurrent user load and/or a system load onto a system, at incremented concurrency ramp-up rates, to determine its stability, performance and integrity.</p>
+<p>During load testing system components are monitored and correlated with transaction response times.  At a point where a system becomes unstable due to erratic or dramatically extended response times the system will have reached its benchmark.   At this point an analysis should take place to identify the bottlenecks and the tuning required to resolve them.  The results of the analysis may indicate a requirement for vertical or horizontal scaling.</p>
+<p>A load test can be executed against an end-to-end IT system or against specific components such as Firewalls or database servers. Typically the goals of load testing are:</p>
+<ul>
+<li>Benchmark a systems performance i.e. to determine its thresholds before instability occurs</li>
+<li>Identify and rectify performance issues in iterative cycles of load testing and performance tuning    </li>
+</ul>
+<h3 id="what-is-stress-testing"><a href="#what-is-stress-testing" aria-hidden="true"><span class="icon icon-link"></span></a>What is Stress Testing?</h3>
+<p>Stress testing is a generic term used to describe the process of putting a system through exertion or stress. The Stress test can combine aspects of performance testing and security testing. An example in case is the process of stress testing firewalls which require concurrent system loads combined with actual attacks against the component. Stress testing is typically used to benchmark a systems performance to determine a systems upper performance limits and to verify how a system recovers when the workload is reduced.</p>
+<h3 id="what-is-benchmark-testing"><a href="#what-is-benchmark-testing" aria-hidden="true"><span class="icon icon-link"></span></a>What is Benchmark Testing?</h3>
+<p>Benchmark testing is the process of load testing a component or an entire end to end IT system to determine the performance characteristics of the application. The benchmark test is repeatable in that the performance measurements captured will vary only a few percent each time the test is run. This enables single changes to be made to the application or infrastructure in an attempt to determine if there is a performance improvement or degradation.</p>
+<p>Benchmark testing can combine aspects of security testing.- An example in case is benchmark testing  firewalls. This requires system and or user loads combined with security violations concurrently executed against the component to determine its performance benchmark.</p>
+<p>The goals of benchmark testing typically fall into two categories:</p>
+<ul>
+<li>To test the system to measure how a change affects its performance characteristics.</li>
+<li>To test and tune the system to reach a performance requirement or service level agreement (SLA). In this case a series of benchmark tests are conducted in conjunction with iterative cycles of performance tuning.</li>
+</ul>
+<h3 id="what-is-volume-testing"><a href="#what-is-volume-testing" aria-hidden="true"><span class="icon icon-link"></span></a>What is Volume Testing?</h3>
+<p>This is a term used to describe load testing and performance testing or stress testing.  It is the process of placing concurrent user and or system generated loads onto a system under test.</p>
+<p>The goals of volume testing are to determine:</p>
+<ul>
+<li>The volume or load at which systems stability degrades.</li>
+<li>To identify and then tune issues preventing a system from reaching required service level agreements (SLA) or volumetric targets.</li>
+</ul>
+<p>A typical performance test or load testing cycle combines both volume testing and performance tuning to ensure a system reaches its required benchmarks.</p>
+<h3 id="what-is-performance-tuning"><a href="#what-is-performance-tuning" aria-hidden="true"><span class="icon icon-link"></span></a>What is Performance Tuning?</h3>
+<p>As performance bottlenecks are identified during load testing and performance testing, these issues are commonly rectified through a process of performance tuning. Performance tuning can involve configuration changes to hardware, software and network components.</p>
+<p>A common bottleneck is the configuration of the application and database servers. Performance tuning can also include tuning SQL queries and tuning an applications underlying code to cater for concurrency and to improve efficiency. Performance tuning can result in hardware changes being made. This is a last resort; ideally tuning changes will result in a reduction of resource utilisation.</p>
+<h3 id="what-is-performance-modelling"><a href="#what-is-performance-modelling" aria-hidden="true"><span class="icon icon-link"></span></a>What is Performance Modelling?</h3>
+<p>Performance modelling is the process of simulating various user and system loads against varying system configurations by using a mathematical approximation of how the model works.  Generally this does not require the use of a Load Test environment.  This is typically much cheaper than performance testing and can produce very accurate results.</p>
+<p>For example, servers are monitored while low level user transactions are executed against the system.  A typical Performance Modelling process results in:
+1. The server counters are correlated with transaction response times.
+2. The information along with system specifications are fed into a mathematical modelling tool.
+3. After the data has been entered various models are produced to demonstrate the system's behaviour in varying configurations and user and/or system loads.
+4. The outputs of performance modelling are used for capacity planning.</p>
+<h3 id="what-is-software-regression-testing"><a href="#what-is-software-regression-testing" aria-hidden="true"><span class="icon icon-link"></span></a>What is Software Regression Testing?</h3>
+<p>Regression testing is used to verify system components that have typically already been proven stable.  This occurs after new functionality or code changes have been released.  Regression testing verifies that components that were previously stable are still stable and fit for purpose after changes to a system's code base or configuration.  Typically in a mature testing approach a regression test pack is automated using automated software testing tools.  Automated Software Testing is typically most successful when implemented by an experienced resource.  Our company, Testing Performance Ltd, offers Automated Software Testing as a service.</p>
+<blockquote>
+<p>Source: <a href="http://www.testingperformance.org" target="_blank" rel="nofollow noopener noreferrer">testingperformance.org</a></p>
+</blockquote>
+</div><div class="post__footer"><div class="post-tags"><a href="/tag/testing" class="post-tags__link"><span>#</span> testing
+		</a><a href="/tag/definitions" class="post-tags__link"><span>#</span> definitions
+		</a></div></div></div><div class="post-comments"></div><div class="author post-author"><img alt="Author image" src="data:image/svg+xml,%3csvg fill='none' viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3cfilter id='__svg-blur-6'%3e%3cfeGaussianBlur in='SourceGraphic' stdDeviation='5'/%3e%3c/filter%3e%3c/defs%3e%3cimage x='0' y='0' filter='url(%23__svg-blur-6)' width='180' height='180' xlink:href='data:image/jpeg%3bbase64%2c/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCABAAEADASIAAhEBAxEB/8QAHAAAAgIDAQEAAAAAAAAAAAAABgcFCAIDBAEA/8QANhAAAQMCBAQDBQYHAAAAAAAAAQIDBAURAAYSIQcTMUEiUXEUYZGhsQgyQoHB0hUXI3KCovD/xAAZAQACAwEAAAAAAAAAAAAAAAAAAQIDBAX/xAAmEQACAgIBAgUFAAAAAAAAAAABAgADESESBBQTIlGBoTEyQXGx/9oADAMBAAIRAxEAPwBEUfOlZpL6nObGmhQsUTWtY6/lb44l1cSZDirv5eoi%2buyEKAv%2baji1cvKmXp/hm0KnurI3WqKi/wAQL4HahwkyVLvehstKP4mVrR%2btvli4%2bCdlZUKyv0iRVxTQKbAjUqK/R1ISsyEtFJbUskG6fAo267Ed%2b%2bDjJmeaHUIcQ1GrxF1pCFpU66jknSVX0hRCR0A8r2wQp4JZMQhafYXzqN9SpKipPodv1wn%2bLfDmJlBylopT0uaqXzzodAJQlASdrDfYnC4VN5V1JMCBkxn5qdZzfRZNApFRgLmTgG27yEkXBCt7E9knFfM65YrWTam1DrQaQ%2b43zUct1Lg03I6j0xOOGRGo9KciJlxorD61s6tYCVkG9ibe/Dn4XUmm59oPt%2bZ4jFVlMKVGC5CbrSgG43v7zi1VNNfL8TN4o5FSJV72t3voPqkY649Sedkth9bCEqISpxTV9I6XsBfYeWLdy%2bEWTpcpiM1R4rDjqiQULWlRAFzbfAJxQyjkfIyURn6C6uU83zG3A8opAvYm17ny9Thr1APrE7IBkrqWAGqx6HGDl7bjfGl5hp0hS03IxgEoaTpbFh64yZE3Ty5IuUlPuwlPtCuqYqOWXGlOpcSJZSppwoUk6EbgjDsGk9cIj7Tjq2F5ZXHcKFapSSUm2xSi4w0GWxAnAilgVfNeYnWaTHXMqL0myW2V6V61AXFrj174M8rQuKeUBIFOy6tKZBHM5kNC%2bnlv78buF60x87ZRLfLUFSNLjgWhJUOSrYgHp6%2bWLROvNFIs4g7dljG/qWWk8AuROfS4tXlxxKuVzP3EOivQ51apqYiULKGw5B0oWepH3utvLHZxBh5lr2TqfnGqyYJp8yO2ost3Ryk6yCEg32uEk73JPuwT/aXnpp9Ao6UNodLkpxXjN7eDr88I2Jm6topseniYfYmU6UNaRYC9/qcQ4h6wygAxsvL7hr9w2l8bs6iS%2b2lVKKWklRLce23%2bRPwxyr4uZ6dYQ6KpEbCxcBEJs/UY5sz5GiRcuu1SlzJzq0tCzTxTsjbxX7gg7DYjv5YHoDtA/hkSPJkVQzQiziI7ba03udk%2be1sVDgRkCaWLHSmT/wDNHPUklJrigb2s3FbH0Tjup0KrZ%2br9PpmZcxvKkoLhabMfmcq6bqJ02A2Tc79sRDrNIojUWVDkTnai8DaPIjpCowG4cUlJ3Njt5Xv2tia4eZmay3WXai00JskNON8txjk8sXF1BX4ulrWB3IxBn1lB8RhXz5jqBSctOMvqLRlqShwoBXFUjVvYHr0O3xx84wUDSlzlm4sdTgJ9338WFb4sTJLlNZiUuI%2b5PUEpQpbjZQCkm5uCOgxAyOMCGC82ugnmtOKbUjWRa2172ta/fEl6i1tY%2bYHiN5iNl06TIQpx2WtTSD0KXFhJJtYdcbq/QpOXKsYMxSF/00Otut30OoUm4Um%2b9vXD7TxbQzT4ypdEZaS9cpDjx8/7cDefX2uIUaPyoKadKguFKX7lzW2RcgAW8N7EH1w%2b4YbcYEiVFnlU7klT1IlNNszWEsU1TPKJfudV/ClJA726m1h9Olqi01hpaIdJitIULKCGgQR8j88QVRzdWJ0tUXK0Z%2bUhxR0y3Ty2ie%2bgdVWOBXMsDOzMB2bWZ8iG02bOqRJUlOk9PCnt0Fhc745xR7CAWC%2b5/k3KFqBwOXtDZyiUyVJCWWQ04kaHUQ0pTcD7usXO47Xx7X6IhyKpNFpsh%2brPauQlK7EKN1LUAdhsCTiG4aZZoUimM1Kd7TFkuNakuokrurex2QB62JOGNkuWYzntjzLzrSWyhGixsq4ubm3kfjguqakglsiFdq2ghRuLeVlXMilNuIoVZbksjZ5tV1LJAvfcWxyry9nJSbGnZhNt/wDt8PdzNUNJ8TEseQuj92MTm%2bnpF1MzAPVH7sHdL6CV9u40MxASso16Q0DKpFfedJBJU2VEW6WN8Z5SnVWj1xmm5uj1Bj2tNoxkakbg2sPO/wBcPVzP9JbIBblqV5DQSf8AbEJmjMNOrsdgwGnGqnEc1x3nkNkJJ2UD4jsR7uoGCy8OhVhqOql0bIn/2Q==' /%3e%3c/svg%3e" width="180" data-src="/assets/static/author.e6b6009.4a680a7.jpg" data-srcset="/assets/static/author.e6b6009.4a680a7.jpg 180w" data-sizes="(max-width: 180px) 100vw, 180px" class="author__image g-image g-image--lazy g-image--loading"><noscript><img src="/assets/static/author.e6b6009.4a680a7.jpg" class="author__image g-image g-image--loaded" width="180"></noscript><!----><p class="author__intro">
+		 I'm a Performance Engineer worked @Splunk ShangHai
+	</p><p class="author__links"><a href="//github.com/Tangyiming">GitHub</a><a href="/my-resume">Resume</a><a href="javascript:" class="author__links__qrcode">一门性能课（公众号）</a></p></div></main><footer class="footer"><span class="footer__copyright">Copyright © 2019 Eamon Tang. All rights reserved. </span></footer></div>
+    <script src="/assets/js/app.69f85a1e.js" defer></script><script src="/assets/js/component--post.d78ecd08.js" defer></script>
+  </body>
+</html>
