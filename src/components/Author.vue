@@ -8,7 +8,7 @@
 		</h1>
 
 		<p class="author__intro">
-			 I'm a Performance Engineer worked @Splunk ShangHai
+			测试开发 | 自动化测试 | 性能测试
 		</p>
 
 		<p class="author__links">

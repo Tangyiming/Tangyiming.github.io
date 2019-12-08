@@ -8,7 +8,7 @@ canonical_url: false
 description: "What is xxx testing"
 ---
 今天来分享下各种测试类型的定义：
-> 咳咳，本博客中英文混乱，轻拍🤪
+> 博客中英文混乱，轻拍🤪
 
 ### What is Performance Testing?
 Performance Testing is associated with a number of interchangeable names. The performance test can also referred to as a stress test, load testing or volume testing and is the application of a process that verifies the ability of a system to handle varying degrees of concurrent users and system transactions.  The Goals of performance testing are driven by a number of factors that could include business volumetric requirements and service level agreements (SLA) as well as perceived and actual performance risk.
@@ -21,7 +21,7 @@ During load testing system components are monitored and correlated with transact
 
 A load test can be executed against an end-to-end IT system or against specific components such as Firewalls or database servers. Typically the goals of load testing are:
  - Benchmark a systems performance i.e. to determine its thresholds before instability occurs
- - Identify and rectify performance issues in iterative cycles of load testing and performance tuning    
+ - Identify and rectify performance issues in iterative cycles of load testing and performance tuning
 ### What is Stress Testing?
 Stress testing is a generic term used to describe the process of putting a system through exertion or stress. The Stress test can combine aspects of performance testing and security testing. An example in case is the process of stress testing firewalls which require concurrent system loads combined with actual attacks against the component. Stress testing is typically used to benchmark a systems performance to determine a systems upper performance limits and to verify how a system recovers when the workload is reduced.
 ### What is Benchmark Testing?
@@ -57,4 +57,3 @@ For example, servers are monitored while low level user transactions are execute
 Regression testing is used to verify system components that have typically already been proven stable.  This occurs after new functionality or code changes have been released.  Regression testing verifies that components that were previously stable are still stable and fit for purpose after changes to a system's code base or configuration.  Typically in a mature testing approach a regression test pack is automated using automated software testing tools.  Automated Software Testing is typically most successful when implemented by an experienced resource.  Our company, Testing Performance Ltd, offers Automated Software Testing as a service.
 
 > Source: [testingperformance.org](http://www.testingperformance.org)
-

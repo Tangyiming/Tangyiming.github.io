@@ -1,8 +1,9 @@
 ---
 title: My Resume
+path: my-resume
 date: 2019-07-19
 published: false
-tags: ['Resume']
+tags: ['resume']
 canonical_url: false
 description: "About Me."
 ---
@@ -13,22 +14,22 @@ description: "About Me."
        </h3>
        <div>
            <span>
-               📞 18724026847 
+               📞 18724026847
            </span>
            <span>
-               ✉️ backtym@gmail.com 
+               ✉️ backtym@gmail.com
            </span>
            <span>
                ⌨️<a href="https://Github.com/Tangyiming"> Github </a>
            </span>
            <span>
-               📖<a href="https://tangyiming.github.io/blog/"> Blog </a>
+               📖<a href="https://eperf.top/"> Blog </a>
            </span>
        </div>
  </center>
 
 
-  ## 🐑 个人信息 
+  ## 🐑 个人信息
 
   - 男，1991 年出生
 
@@ -36,13 +37,14 @@ description: "About Me."
 
   - 家乡南京，现居上海
 
-  - 工作经验：4 年
+  - 工作经验：2015/7~至今
 
 
-  ## 🙈 **自我评价**
+  ## 🙈 自我评价
 
-  拥有优秀的沟通与学习能力；具有职业创业精神和仔细认真踏实的工作作风；拥有择一事而终老的踏实不浮躁的品质。
-
+  - 拥有优秀的沟通与学习能力
+  - 具有职业创业精神和仔细认真踏实的工作作风
+  - 拥有择一事而终老的踏实不浮躁的品质
 
 
   ## 👨‍🎓 教育经历
@@ -51,14 +53,13 @@ description: "About Me."
 
   - 英语等级 CET6
 
-    
 
   ## 🎈 工作经历
 
-  - **2019.07 ~ 至今 Splunk Shanghai Performance Engineer**
-    
-    主要工作内容：搜索相关性能测试脚本优化与用户问题场景的测试用例覆盖
-    
+  - **2019.07 ~ 至今 Allegis Group - Contract of Splunk Performance Engineer**
+
+    主要工作内容：搜索功能相关的性能测试脚本优化、客户问题的测试用例覆盖、性能问题探查分析
+
 
   - **2019.05 ~ 2019.07 上海掌小门教育科技有限公司 运营系统研发部**
 
@@ -76,7 +77,7 @@ description: "About Me."
 
     平台化前端与服务端性能测试与工具集等
 
-    
+
 
   - **2017.06 ~ 2019.05  红星美凯龙悦家互联网科技有限公司  质量管理部  测试开发工程师**
 
@@ -98,7 +99,7 @@ description: "About Me."
 
     负责部门内部使用的 App 管理平台、消费指数平台、性能测试平台，质量门平台的前端开发工作和持续交付平台，研发效能平台的维护工作；App 管理平台、消费指数平台和性能测试平台使用 React+AntD+AntV 开发，质量门平台，持续交付平台与研发效能平台使用 Vue+Element+echarts 等进行开发与维护。
 
-    
+
 
   - **2016.11 ~ 2017.06  南京步锐捷科技有限公司外派江苏润和软件股份有限公司  自动化测试**
 
@@ -114,7 +115,7 @@ description: "About Me."
 
     4、部分测试用例编写与功能测试。
 
-  
+
 
   - **2015.06 ~ 2016.10  南京秉谦信息科技有限公司  Java Web 开发**
 
@@ -127,12 +128,11 @@ description: "About Me."
     3、维护系统数据库信息（ Oracle SQL ）。
 
     4、远程服务器系统部署实施。
-    
-    
+
+
 
   ## 🏹技能清单
-
-  - Java / SpringBoot
-  - Python / Flask
+  - Python / Django / Flask
   - JavaScript / Vue.js
-  - Jmeter / Jenkins 
+  - Java JVM
+  - Splunk / Jmeter / Jenkins / Docker / Ansible / Nginx

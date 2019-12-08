@@ -10,9 +10,9 @@ description: "远程模糊搜索select下拉项时，为了避免输入时过多
 
 远程模糊搜索select下拉项时，为了避免输入时过多的请求，在vue中添加优化防抖功能，但是中间遇到了两个问题：
 
-1.防抖不起作用，根本不delay，最终发现是函数声明方式导致；
+1.防抖不起作用，根本不delay，最终发现是函数声明方式导致。使用箭头函数声明，箭头函数体内的this对象，就是定义时所在的对象，而不是使用时所在的对象，它是固定不变的。
 
-2.因为箭头函数里this指向问题，无法给data中的变量赋值，最终通过先获得顶层this域，再赋值解决。
+2.因为箭头函数里this指向作用域问题，无法给data中的变量赋值，最终通过先获得顶层this域，再赋值解决。
 
 上代码：
 
@@ -46,7 +46,7 @@ data() {
             department: ''
         }
     },
-   
+
     beforeCreate() {
         _this = this
     },
@@ -77,8 +77,8 @@ data() {
 </script>
 ```
 
-使用箭头函数的方式，防抖函数才可以生效。
-
-原因解释：
+参考：
 
 https://stackoverflow.com/questions/53041171/lodashs-debounce-not-working-in-vue-js
+
+https://es6.ruanyifeng.com/?search=箭头函数&x=0&y=0#docs/function#箭头函数
