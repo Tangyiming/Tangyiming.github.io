@@ -5,7 +5,7 @@
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && copy CNAME dist || cp CNAME dist",
     "deploy": "gh-pages -b master -d dist"
   },
   "dependencies": {
