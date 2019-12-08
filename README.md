@@ -1,16 +1,13 @@
-# Gridsome Blog Starter
+# Notice
 
-> A simple, hackable & minimalistic starter for Gridsome that uses Markdown for content.
+## Node
+Version: `v10.x.x`
 
-## Features
-- Beautiful and simple design.
-- Markdown for content.
-- Tags support.
-- Dark / Light toggle.
-- CSS variables, SCSS & BEM for styling.
-- 100, 100, 100, 100 score on Google Lighthouse.
-- Uses same front-matter fields as Dev.to.
 
-## Demo URL
-
-https://gridsome-starter-blog.netlify.com
+## Deploy by gh-pages
+I use the master branch for statics files
+so add this two lines into scripts:
+```json
+"predeploy": "npm run build && copy CNAME dist || cp CNAME dist",
+"deploy": "gh-pages -b master -d dist"
+```
