@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html data-html-server-rendered="true" lang="en" data-vue-tag="lang">
+  <head>
+    <title data-vue-tag="true">优雅的部署github pages博客 - blog by Eamon</title><meta data-vue-tag="true" charset="utf-8"/><meta data-vue-tag="true" name="generator" content="Gridsome v0.5.4"/><meta data-vue-tag="true" data-key="viewport" name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/><meta data-vue-tag="true" data-key="description" name="description" content="While the world sleep I dream"/><meta data-vue-tag="true" data-key="format-detection" name="format-detection" content="telephone=no"/><meta data-vue-tag="true" name="description" content="几个你可能也会遇到的问题～"/><link data-vue-tag="true" rel="icon" type="image/png" sizes="16x16" href="/assets/static/favicon.ce0531f.9410551.png"/><link data-vue-tag="true" rel="icon" type="image/png" sizes="32x32" href="/assets/static/favicon.ac8d93a.9410551.png"/><link data-vue-tag="true" rel="icon" type="image/png" sizes="96x96" href="/assets/static/favicon.b9532cc.9410551.png"/><link data-vue-tag="true" rel="apple-touch-icon" type="image/png" sizes="76x76" href="/assets/static/favicon.f22e9f3.9410551.png"/><link data-vue-tag="true" rel="apple-touch-icon" type="image/png" sizes="152x152" href="/assets/static/favicon.62d22cb.9410551.png"/><link data-vue-tag="true" rel="apple-touch-icon" type="image/png" sizes="120x120" href="/assets/static/favicon.1539b60.9410551.png"/><link data-vue-tag="true" rel="apple-touch-icon" type="image/png" sizes="167x167" href="/assets/static/favicon.dc0cdc5.9410551.png"/><link data-vue-tag="true" rel="apple-touch-icon" type="image/png" sizes="180x180" href="/assets/static/favicon.7b22250.9410551.png"/><noscript data-vue-tag="true" ><style>.g-image--loading{display:none;}</style></noscript><link rel="preload" href="/assets/css/styles.cbb856ba.css" as="style"><link rel="preload" href="/assets/js/app.7e81530e.js" as="script"><link rel="preload" href="/assets/css/3.styles.ba5ac8e9.css" as="style"><link rel="preload" href="/assets/js/component--post.f0fcd7c4.js" as="script"><link rel="prefetch" href="/assets/js/component--404.0172b20d.js"><link rel="prefetch" href="/assets/js/component--home.4fd1b271.js"><link rel="prefetch" href="/assets/js/component--tag.e14e17f9.js"><link rel="prefetch" href="/assets/js/page-query.98979203.js"><link rel="stylesheet" href="/assets/css/styles.cbb856ba.css"><link rel="stylesheet" href="/assets/css/3.styles.ba5ac8e9.css">
+  </head>
+  <body data-vue-tag="">
+    <script>
+      // Add dark / light detection that runs before Vue.js load. Borrowed from overreacted.io
+      (function() {
+        window.__onThemeChange = function() {};
+        function setTheme(newTheme) {
+          window.__theme = newTheme;
+          preferredTheme = newTheme;
+          document.body.setAttribute('data-theme', newTheme);
+          window.__onThemeChange(newTheme);
+        }
+
+        var preferredTheme;
+        try {
+          preferredTheme = localStorage.getItem('theme');
+        } catch (err) { }
+
+        window.__setPreferredTheme = function(newTheme) {
+          setTheme(newTheme);
+          try {
+            localStorage.setItem('theme', newTheme);
+          } catch (err) {}
+        }
+
+        var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        darkQuery.addListener(function(e) {
+          window.__setPreferredTheme(e.matches ? 'dark' : 'light')
+        });
+
+        setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
+      })();
+    </script>
+
+    <div id="app" data-server-rendered="true"><header class="header"><div class="header__left"><a href="/" class="logo active"><span class="logo__text">
+    ← blog by Eamon
+  </span></a></div><div class="header__right"><button role="button" aria-label="Toggle dark/light" class="toggle-theme"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></button></div></header><main class="main"><div class="post-title"><h1 class="post-title__text">
+      优雅的部署github pages博客
+    </h1><div class="post-meta">
+   Posted 9. December 2019.
+   <strong>1 min read.</strong></div></div><div class="post content-box"><div class="post__header"><!----></div><div class="post__content"><p>这里分享下我使用<a href="https://gridsome.org/" target="_blank" rel="nofollow noopener noreferrer">Gridsome</a>建博客并使用<a href="https://pages.github.com/" target="_blank" rel="nofollow noopener noreferrer">GitHub Pages</a>免费托管中遇到了几个作为新手一定会遇到的问题。</p>
+<h2 id="项目源码与静态文件的存放问题"><a href="#%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81%E4%B8%8E%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%E7%9A%84%E5%AD%98%E6%94%BE%E9%97%AE%E9%A2%98" aria-hidden="true"><span class="icon icon-link"></span></a>项目源码与静态文件的存放问题</h2>
+<p>由于我们需要将Gridsome或者其他工具（如<a href="https://www.gatsbyjs.org/" target="_blank" rel="nofollow noopener noreferrer">Gatsby</a> ）build后的静态文件放在github仓库并作为网站的Source，所以我们不可能将项目直接存放到github上。</p>
+<p>我选择了master分支作为我的站点的Source分支，创建了src分支存储我的项目代码。</p>
+<h2 id="使用gh-pages部署"><a href="#%E4%BD%BF%E7%94%A8gh-pages%E9%83%A8%E7%BD%B2" aria-hidden="true"><span class="icon icon-link"></span></a>使用gh-pages部署</h2>
+<p>如果是手动build，再分别修改source分支与src分支提交简直是个噩梦，过程繁琐且容易出错。</p>
+<p>我们选择安装<a href="https://github.com/tschaub/gh-pages" target="_blank" rel="nofollow noopener noreferrer">gh-pages</a>进行自动化的部署工作，如何安装就不赘述，详细使用阅读文档。</p>
+<p>gh-pages有多种命令进行使用，这里根据我们的需求：</p>
+<blockquote>
+<p>将gridsome build出的dist目录下的文件提交到仓库的master分支</p>
+</blockquote>
+<p>于是我们在<code class="language-text">package.json</code>的scripts下添加以下配置：</p>
+<pre class="language-json"><span class="token property">"predeploy"</span><span class="token operator">:</span> <span class="token string">"npm run build"</span><span class="token punctuation">,</span>
+<span class="token property">"deploy"</span><span class="token operator">:</span> <span class="token string">"gh-pages -b master -d dist"</span></pre>
+<p>这里 <code class="language-text">-b</code> 指定要部署的分支，<code class="language-text">-d</code> 指定Source文件目录，也就是build后生成的目录。</p>
+<p>以后只需一件 <code class="language-text">npm deploy</code> 即可完成部署。如果你的博客绑定了自己的域名，请继续往下阅读。 </p>
+<h2 id="cname"><a href="#cname" aria-hidden="true"><span class="icon icon-link"></span></a>CNAME</h2>
+<p>以上方法每次自动构建会出现一个问题，就是会把我们的CNAME文件删掉，为了避免这个问题，在我们的项目根目录新建CNAME文件，里面写上你的域名。然后在构建脚本上做一点修改：</p>
+<pre class="language-json"><span class="token property">"predeploy"</span><span class="token operator">:</span> <span class="token string">"npm run build &amp;&amp; copy CNAME dist || cp CNAME dist"</span><span class="token punctuation">,</span></pre>
+<p>意思是在prebuild阶段，build执行完，再将CNAME文件拷贝到dist目录下，这样到了deploy阶段，CNAME文件也就一同被部署到了master分支上了。</p>
+<p>这里<code class="language-text">copy</code>是windows上的CMD指令，<code class="language-text">cp</code>是linux或者os里的指令。如果<code class="language-text">&amp;&amp;</code>前的指令执行成功，则会执行<code class="language-text">&amp;&amp;</code>后的指令；如果<code class="language-text">||</code>前的指令执行失败，则会执行<code class="language-text">||</code>后的指令。这样就可以兼容多个操作系统啦～</p>
+<p>如果在你建博客中遇到部署，域名绑定等问题，都可以关注我的公众号后台给我留言咨询哦！</p>
+</div><div class="post__footer"><div class="post-tags"><a href="/tag/gh-pages" class="post-tags__link"><span>#</span> gh-pages
+		</a><a href="/tag/deploy" class="post-tags__link"><span>#</span> deploy
+		</a></div></div></div><div class="post-comments"></div><div class="author post-author"><img alt="Author image" src="data:image/svg+xml,%3csvg fill='none' viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3cfilter id='__svg-blur-8'%3e%3cfeGaussianBlur in='SourceGraphic' stdDeviation='5'/%3e%3c/filter%3e%3c/defs%3e%3cimage x='0' y='0' filter='url(%23__svg-blur-8)' width='180' height='180' xlink:href='data:image/jpeg%3bbase64%2c/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCABAAEADASIAAhEBAxEB/8QAHAAAAgIDAQEAAAAAAAAAAAAABgcFCAIDBAEA/8QANhAAAQMCBAQDBQYHAAAAAAAAAQIDBAURAAYSIQcTMUEiUXEUYZGhsQgyQoHB0hUXI3KCovD/xAAZAQACAwEAAAAAAAAAAAAAAAAAAQIDBAX/xAAmEQACAgIBAgUFAAAAAAAAAAABAgADESESBBQTIlGBoTEyQXGx/9oADAMBAAIRAxEAPwBEUfOlZpL6nObGmhQsUTWtY6/lb44l1cSZDirv5eoi%2buyEKAv%2baji1cvKmXp/hm0KnurI3WqKi/wAQL4HahwkyVLvehstKP4mVrR%2btvli4%2bCdlZUKyv0iRVxTQKbAjUqK/R1ISsyEtFJbUskG6fAo267Ed%2b%2bDjJmeaHUIcQ1GrxF1pCFpU66jknSVX0hRCR0A8r2wQp4JZMQhafYXzqN9SpKipPodv1wn%2bLfDmJlBylopT0uaqXzzodAJQlASdrDfYnC4VN5V1JMCBkxn5qdZzfRZNApFRgLmTgG27yEkXBCt7E9knFfM65YrWTam1DrQaQ%2b43zUct1Lg03I6j0xOOGRGo9KciJlxorD61s6tYCVkG9ibe/Dn4XUmm59oPt%2bZ4jFVlMKVGC5CbrSgG43v7zi1VNNfL8TN4o5FSJV72t3voPqkY649Sedkth9bCEqISpxTV9I6XsBfYeWLdy%2bEWTpcpiM1R4rDjqiQULWlRAFzbfAJxQyjkfIyURn6C6uU83zG3A8opAvYm17ny9Thr1APrE7IBkrqWAGqx6HGDl7bjfGl5hp0hS03IxgEoaTpbFh64yZE3Ty5IuUlPuwlPtCuqYqOWXGlOpcSJZSppwoUk6EbgjDsGk9cIj7Tjq2F5ZXHcKFapSSUm2xSi4w0GWxAnAilgVfNeYnWaTHXMqL0myW2V6V61AXFrj174M8rQuKeUBIFOy6tKZBHM5kNC%2bnlv78buF60x87ZRLfLUFSNLjgWhJUOSrYgHp6%2bWLROvNFIs4g7dljG/qWWk8AuROfS4tXlxxKuVzP3EOivQ51apqYiULKGw5B0oWepH3utvLHZxBh5lr2TqfnGqyYJp8yO2ost3Ryk6yCEg32uEk73JPuwT/aXnpp9Ao6UNodLkpxXjN7eDr88I2Jm6topseniYfYmU6UNaRYC9/qcQ4h6wygAxsvL7hr9w2l8bs6iS%2b2lVKKWklRLce23%2bRPwxyr4uZ6dYQ6KpEbCxcBEJs/UY5sz5GiRcuu1SlzJzq0tCzTxTsjbxX7gg7DYjv5YHoDtA/hkSPJkVQzQiziI7ba03udk%2be1sVDgRkCaWLHSmT/wDNHPUklJrigb2s3FbH0Tjup0KrZ%2br9PpmZcxvKkoLhabMfmcq6bqJ02A2Tc79sRDrNIojUWVDkTnai8DaPIjpCowG4cUlJ3Njt5Xv2tia4eZmay3WXai00JskNON8txjk8sXF1BX4ulrWB3IxBn1lB8RhXz5jqBSctOMvqLRlqShwoBXFUjVvYHr0O3xx84wUDSlzlm4sdTgJ9338WFb4sTJLlNZiUuI%2b5PUEpQpbjZQCkm5uCOgxAyOMCGC82ugnmtOKbUjWRa2172ta/fEl6i1tY%2bYHiN5iNl06TIQpx2WtTSD0KXFhJJtYdcbq/QpOXKsYMxSF/00Otut30OoUm4Um%2b9vXD7TxbQzT4ypdEZaS9cpDjx8/7cDefX2uIUaPyoKadKguFKX7lzW2RcgAW8N7EH1w%2b4YbcYEiVFnlU7klT1IlNNszWEsU1TPKJfudV/ClJA726m1h9Olqi01hpaIdJitIULKCGgQR8j88QVRzdWJ0tUXK0Z%2bUhxR0y3Ty2ie%2bgdVWOBXMsDOzMB2bWZ8iG02bOqRJUlOk9PCnt0Fhc745xR7CAWC%2b5/k3KFqBwOXtDZyiUyVJCWWQ04kaHUQ0pTcD7usXO47Xx7X6IhyKpNFpsh%2brPauQlK7EKN1LUAdhsCTiG4aZZoUimM1Kd7TFkuNakuokrurex2QB62JOGNkuWYzntjzLzrSWyhGixsq4ubm3kfjguqakglsiFdq2ghRuLeVlXMilNuIoVZbksjZ5tV1LJAvfcWxyry9nJSbGnZhNt/wDt8PdzNUNJ8TEseQuj92MTm%2bnpF1MzAPVH7sHdL6CV9u40MxASso16Q0DKpFfedJBJU2VEW6WN8Z5SnVWj1xmm5uj1Bj2tNoxkakbg2sPO/wBcPVzP9JbIBblqV5DQSf8AbEJmjMNOrsdgwGnGqnEc1x3nkNkJJ2UD4jsR7uoGCy8OhVhqOql0bIn/2Q==' /%3e%3c/svg%3e" width="180" data-src="/assets/static/author.e6b6009.4a680a7.jpg" data-srcset="/assets/static/author.e6b6009.4a680a7.jpg 180w" data-sizes="(max-width: 180px) 100vw, 180px" class="author__image g-image g-image--lazy g-image--loading"><noscript><img src="/assets/static/author.e6b6009.4a680a7.jpg" class="author__image g-image g-image--loaded" width="180"></noscript><!----><p class="author__intro">
+		测试开发 | 自动化测试 | 性能测试
+	</p><p class="author__links"><a href="//github.com/Tangyiming">GitHub</a><a href="/my-resume">Resume</a><a href="javascript:" class="author__links__qrcode">一门性能课（公众号）</a></p></div></main><footer class="footer"><span class="footer__copyright">Copyright © 2019 Eamon Tang. All rights reserved. </span></footer></div>
+    <script src="/assets/js/app.7e81530e.js" defer></script><script src="/assets/js/component--post.f0fcd7c4.js" defer></script>
+  </body>
+</html>
