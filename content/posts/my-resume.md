@@ -8,28 +8,34 @@ canonical_url: false
 description: "About Me."
 ---
 
+<head> 
+    <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script> 
+    <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/v4-shims.js"></script> 
+</head> 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
 <center>
        <h3>
            唐一鸣 🥇 测试开发 / 自动化测试 / 性能测试
        </h3>
        <div>
            <span>
-               📞 18724026847
+               <i class="fas fa-mobile-alt"></i> 18724026847
            </span>
            <span>
-               ✉️ backtym@live.cn
+               <i class="far fa-envelope"></i> backtym@live.cn
            </span>
            <span>
-               ⌨️<a href="https://Github.com/Tangyiming"> Github </a>
+               <i class="fab fa-github"></i> <a href="https://Github.com/Tangyiming">Github</a>
            </span>
            <span>
-               📖<a href="https://eperf.top/"> Blog </a>
+               <i class="fas fa-blog"></i> <a href="https://eperf.top/">Blog</a>
            </span>
        </div>
  </center>
 
 
-  ## 🐏 个人信息
+  ## <i class="fab fa-mailchimp"></i> 个人信息
 
   - 男，1991 年出生
 
@@ -40,28 +46,28 @@ description: "About Me."
   - 工作经验：2015.06 ~ 至今
 
 
-  ## 🧬 自我评价
+  ## <i class="fas fa-dna"></i> 自我评价
 
   - 拥有优秀的沟通与学习能力
   - 具有职业创业精神和仔细认真踏实的工作作风
   - 拥有择一事而终老的踏实不浮躁的品质
 
 
-  ## 🛠️ 技能清单
+  ## <i class="fas fa-tools"></i> 技能清单
   - Python / Flask
   - Java / Springboot
   - JavaScript / Vue.js
   - Jmeter / Jenkins / Docker / Ansible / Nginx / Splunk
 
 
-  ## 📚 教育经历
+  ## <i class="fas fa-graduation-cap"></i> 教育经历
 
   - 2011.9 ~ 2015.7 曲阜师范大学 信息与计算科学专业 学士学位
 
   - 英语等级 CET6
 
 
-  ## ⌨️ 工作经历
+  ## <i class="fas fa-code"></i> 工作经历
 
   - **2019.07 ~ Now Allegis Group - Contract of Splunk Performance Engineer**
 
