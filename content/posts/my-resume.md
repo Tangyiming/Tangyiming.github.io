@@ -10,14 +10,14 @@ description: "About Me."
 
 <center>
        <h3>
-           唐一鸣🥇测试开发
+           唐一鸣 🥇 测试开发 / 自动化测试 / 性能测试
        </h3>
        <div>
            <span>
                📞 18724026847
            </span>
            <span>
-               ✉️ backtym@gmail.com
+               ✉️ backtym@live.cn
            </span>
            <span>
                ⌨️<a href="https://Github.com/Tangyiming"> Github </a>
@@ -37,7 +37,7 @@ description: "About Me."
 
   - 家乡南京，现居上海
 
-  - 工作经验：2015/7~至今
+  - 工作经验：2015.06 ~ 至今
 
 
   ## 🧬 自我评价
@@ -48,10 +48,10 @@ description: "About Me."
 
 
   ## 🛠️ 技能清单
-  - Python / Django / Flask
+  - Python / Flask
+  - Java / Springboot
   - JavaScript / Vue.js
-  - Java JVM
-  - Splunk / Jmeter / Jenkins / Docker / Ansible / Nginx
+  - Jmeter / Jenkins / Docker / Ansible / Nginx / Splunk
 
 
   ## 📚 教育经历
@@ -63,7 +63,7 @@ description: "About Me."
 
   ## ⌨️ 工作经历
 
-  - **2019.07 ~ 至今 Allegis Group - Contract of Splunk Performance Engineer**
+  - **2019.07 ~ Now Allegis Group - Contract of Splunk Performance Engineer**
 
     1）Enhance freaky cases which test results is unstable
 
@@ -75,7 +75,9 @@ description: "About Me."
 
         3 case that anchors/symbols in test data is random
 
-    2）Cover customer case into search cases Real time search memory leak when bundle replicate
+    2）Cover customer case into search cases 
+        
+        Real time search memory leak when bundle replicate
 
     3）Other
 
@@ -93,7 +95,7 @@ description: "About Me."
 
         Detach ES app from exist test cases to reduce potential impact due to python compatibility
 
-    Main KR（Key Result）:
+    Main Key Result:
 
         Reduce the freaky cases number by 90%
 
@@ -129,7 +131,7 @@ description: "About Me."
 
     1）接口测试
 
-        基于公司自研框架 Restapi（ SpringBoot+Maven+testng+restAssured+extentReport ）对重要业务场景的接口和最多被调用到的接口进行接口测试（单接口调用，场景化多接口串联调用）。了解接口业务场景，设计测试用例，编写测试脚本，执行测试用例，联系研发修复问题，配置 Jenkins Job（拉仓库脚本，Maven 执行测试，生成报告），集成持续交付系统，在以后项目每次发版部署后自动执行测试用例生成报告，维护用例与测试脚本。
+        基于 SpringBoot+Maven+testng+restAssured+extentReport 对重要业务场景的接口和最多被调用到的接口进行接口测试（单接口调用，场景化多接口串联调用）。了解接口业务场景，设计测试用例，编写测试脚本，执行测试用例，联系研发修复问题，配置 Jenkins Job（拉仓库脚本，Maven 执行测试，生成报告），集成持续交付系统，在以后项目每次发版部署后自动执行测试用例生成报告，维护用例与测试脚本。
 
     2）性能测试（ 后端接口 / 前端 H5 页 ）
 
