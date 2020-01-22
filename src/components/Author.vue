@@ -16,7 +16,7 @@
 
 			<a href="//github.com/Tangyiming">GitHub</a>
 			<a href="/my-resume">Resume</a>
-			<a class="author__links__qrcode" href="javascript:">一门性能课（公众号）</a>
+			<!-- <a class="author__links__qrcode" href="javascript:">一门性能课（公众号）</a> -->
 		</p>
 
 

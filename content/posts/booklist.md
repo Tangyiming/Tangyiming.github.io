@@ -10,20 +10,42 @@ canonical_url: false
 description: "鸟欲高飞先振翅,人求上进先读书。——李若禅"
 ---
 
-## Splunk
+## Java
 
-📖 Splunk 7 Essentials Third Edition
+📖 Effective Java Third Edition
 
-🔗 [百度云](https://pan.baidu.com/s/1OGy7zpJkOf8i4KDn6HoWrg)[cxgf]
+
+## Python
+
+📖 The New And Improved Flask Mega Tutorial
+
 
 ## Performance
 
 📖 BPF Performance Tools
 
-🔗 [百度云](https://pan.baidu.com/s/114QeTt19Nz70qAehPUfL9Q)[cewb]
 
 ## Operating Systems
 
 📖 操作系统精髓与设计原理 第8版
 
-🔗 [百度云](https://pan.baidu.com/s/1ngGoF-n0IPElYVOllF1W0A)[50mb]
+
+## Splunk
+
+📖 Splunk 7 Essentials Third Edition
+
+
+## Self Growth
+
+📖 7 Habits Of Highly Effective People
+
+
+
+
+
+
+
+
+
+
+

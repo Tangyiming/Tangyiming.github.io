@@ -8,15 +8,15 @@ canonical_url: false
 description: "About Me."
 ---
 
-<head> 
-    <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script> 
-    <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/v4-shims.js"></script> 
-</head> 
+<head>
+    <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/v4-shims.js"></script>
+</head>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 
 <center>
        <h3>
-           唐一鸣 🥇 测试开发 / 自动化测试 / 性能测试
+           Yiming Tang 🥇 Test Developer / Automation Test / Performance Test
        </h3>
        <div>
            <span>
@@ -35,41 +35,42 @@ description: "About Me."
  </center>
 
 
-  ## <i class="fab fa-mailchimp"></i> 个人信息
+  ## <i class="fab fa-mailchimp"></i> About me
 
-  - 男，1991 年出生
+  - Male，Born in 1991
 
-  - 已婚
+  - Married
 
-  - 家乡南京，现居上海
+  - Hometown Nanjing, now in ShangHai
 
-  - 工作经验：2015.06 ~ 至今
-
-
-  ## <i class="fas fa-dna"></i> 自我评价
-
-  - 拥有优秀的沟通与学习能力
-  - 具有职业创业精神和仔细认真踏实的工作作风
-  - 拥有择一事而终老的踏实不浮躁的品质
+  - Work from 2015.06 to now
 
 
-  ## <i class="fas fa-tools"></i> 技能清单
+  ## <i class="fas fa-dna"></i> Self Assessment
+
+  - Have excellent communication and learning skills
+  - Have a professional entrepreneurial spirit and a careful and down-to-earth working style
+  - Possesses a solid, non-impatient quality
+
+
+  ## <i class="fas fa-tools"></i> Skills
   - Python / Flask
   - Java / Springboot
   - JavaScript / Vue.js
   - Jmeter / Jenkins / Docker / Ansible / Nginx / Splunk
 
 
-  ## <i class="fas fa-graduation-cap"></i> 教育经历
+  ## <i class="fas fa-graduation-cap"></i> Education
 
-  - 2011.9 ~ 2015.7 曲阜师范大学 信息与计算科学专业 学士学位
+  - 2011.9 ~ 2015.7 Qufu Nomal University
 
-  - 英语等级 CET6
+    Bachelor Of Information and Computing Science
+
+    English CET 6
 
 
-  ## <i class="fas fa-code"></i> 工作经历
-
-  - **2019.07 ~ Now Allegis Group - Contract of Splunk Performance Engineer**
+  ## <i class="fas fa-code"></i> Professional Experience
+  - **2019.07 ~ Now  Allegis Group  -  Contract of Splunk Performance Engineer**
 
     1）Enhance freaky cases which test results is unstable
 
@@ -81,17 +82,17 @@ description: "About Me."
 
         3 case that anchors/symbols in test data is random
 
-    2）Cover customer case into search cases 
-        
+    2）Cover customer case into search cases
+
         Real time search memory leak when bundle replicate
 
     3）Other
 
-        Daily triage 
+        Daily triage
 
         Update urls of app add-ons in search cases
 
-        Timeout solution to hung cases 
+        Timeout solution to hung cases
 
         Comparison of orca0.8+Debian8 and orca1.0.1+RHEL8
 
@@ -106,79 +107,75 @@ description: "About Me."
         Reduce the freaky cases number by 90%
 
         Add new qualified perf cases
-        
+
         Reduce time to triage by 90% via stabilizing case and automating reproducing issues.
-      
-
-
-  <!-- - **2019.05 ~ 2019.07 上海掌小门教育科技有限公司 运营系统研发部**
-
-    主要工作内容：业务测试、性能测试，自动化测试平台的规划设计与搭建
-
-    1）业务测试
-
-    拼团活动，六一少儿思维挑战赛与营销系统管理后台少儿激励值体系部分。
-
-    2）性能测试
-
-    M站报名页注册预约接口与高考估分活动获取二维码接口压测。
-
-    3）自动化测试平台的规划设计与搭建
-
-    平台化前端与服务端性能测试与工具集等 -->
 
 
 
-  - **2017.06 ~ 2019.05  红星美凯龙悦家互联网科技有限公司  质量管理部  测试开发工程师**
 
-    🏆2018 年度集团先进员工（ 每个部门一个 ）
+  - **2017.06 ~ 2019.05   China Red Star Internet Technology co. LTD   -  Quality Management Department  Test Development Engineer**
 
-    主要工作内容：接口测试、性能测试、H5 开发、测试方案落地推广与培训
+    🏆 Annual advanced employee in 2018
 
-    1）接口测试
+    Main work: Web api test, Performance test, H5 development, Test scheme implementation promotion and training
 
-        基于 SpringBoot+Maven+testng+restAssured+extentReport 对重要业务场景的接口和最多被调用到的接口进行接口测试（单接口调用，场景化多接口串联调用）。了解接口业务场景，设计测试用例，编写测试脚本，执行测试用例，联系研发修复问题，配置 Jenkins Job（拉仓库脚本，Maven 执行测试，生成报告），集成持续交付系统，在以后项目每次发版部署后自动执行测试用例生成报告，维护用例与测试脚本。
+    1）Web API Test
 
-    2）性能测试（ 后端接口 / 前端 H5 页 ）
+        The technology stack used are SpringBoot Maven TestNG RestAssured and extentReport.
+        Test the apis for important business scenarios and the ones that are most invoked. We test these by calling the single api or calling multiple apis which compose different scenes.
+        The work flow is:
+        - Understand the business scenarios
+        - Design write and execute test cases
+        - Submit issues to developers
+        - Valide the fix of issues
+        - Configue jenkins jobs and integrated test cases into continuous delivery system
+        - Run regression test automatically each time push new codes into repositories
+        - Generate test reports and show in our test platforms
+        - maintenance test cases and test scripts
 
-        后端使用 Jmeter 工具与自研的性能测试平台进行定制化场景压测与单接口性能测试。其中参与需求调研、场景定制、数据准备、Jmeter 脚本开发、测试执行、性能诊断、性能调优（ 与开发一起进行 ），发布测试报告整个流程的工作。18 年全年共压测 120+次，覆盖互联网集团基础应用（ 短信平台，统一登陆 ），龙眼（ 代办中心 ），龙翼龙果（ 商品中心，开单管理，交易 ），智慧商场（ 人脸识别 ），内部流程管理系统，大数据平台（ 战报系统 ）、企划（ 大牌天团活动 ），APP 等业务线，精准发现容量的瓶颈，发现问题 10+,有效保障了“32 周年庆”、“两天来了”、“五一”、“双十一”等大促活动的成功举办。
+    2）Performance test（ Restful API / Web Pages）
 
-        前端 H5 页面测试由我一人独立调研并基于 Sitespeed（ Docker ）开源框架二次开发搭建前端性能测试平台投入公司的线上项目使用，数据存储使用 influxDB 与 MySQL，后端使用 Python/Flask，前端使用 React，自动化构建测试使用了 Jenkins，服务器使用 Centos7，并与持续交付系统对接。
+        We test restful apis using Jmeter and the test platforms we developed. We test single api or multiple apis which compose a scene to check the performance in any node of the link.
 
-    3）前端 H5 开发
+        The work flow is:
+        - Demand research
+        - Customization scenarios
+        - Prepare test data
+        - Write Jmeter test scripts
+        - Debug and execute tests in different test envs
+        - Monitor and diagnosing performance
+        - Tuning and profiling with Devs
+        - Publish test report
 
-        负责部门内部使用的 App 管理平台、消费指数平台、性能测试平台，质量门平台的前端开发工作和持续交付平台，研发效能平台的维护工作；
-        
-        App 管理平台、消费指数平台和性能测试平台使用 React+AntD+AntV 开发，质量门平台，持续交付平台与研发效能平台使用 Vue+Element+echarts 等进行开发与维护。
+        We run performance tests for more than 120 times in 2018. Covers all the basical systems or business lines in company like SMS, Login, Ticket system, CMS, Commodity center, Billing management, Trading, Wisdom mall, Sales promotion activities, Apps and so on.
+        The bottleneck of capacity was accurately identified and problems were identified 10+.We effectively ensured the success of the "32nd anniversary celebration", "coming in two days", "May Day", "double eleven" and other promotional activities.
 
+        The front-end H5 pages test was investigated by me independently. The front-end performance test platform was built and put into the company's online project all by myself which base on open source framework the Sitespeed and other techs like docker influxdb mysql.
+        I use Python and Flask for backend, React and AntV for frontend, Jenkins for CD, Centos7 as server.
 
+    3）H5 development
 
-  - **2016.11 ~ 2017.06  南京步锐捷科技有限公司外派江苏润和软件股份有限公司  自动化测试**
+        Responsible for the frontend development of the App management platform, consumption index platform, performance test platform, quality gate platform, continuous delivery platform, and maintenance of the efficiency platform used by the department.
 
-    🏆在职期间受到经理多次公开表扬表示对我工作的肯定，离职时加薪挽留。
+        The technology stack used are React AntD AntV and Vue Element echarts.
 
-    主要对 Rokid 语音智能家居机器人进行自动化测试工作
+  - **2016.11 ~ 2017.06  Nanjing buruijie technology Co.,Ltd. Dispatched to Jiangsu Hoperun Software Co.,Ltd  -  Automation Test**
 
-    1）编写基于框架 UiAutomator 的 Python 自动化测试脚本；
+    The main task is to automated test of Rokid voice intelligent home robot
 
-    2）编写需要的工具（ JavaFX 窗口工具，Python 脚本工具，Shell 脚本工具，Apk 工具 ）；
+    1) Write Python automation test script based on UiAutomator;
 
-    3）进行内存泄漏测试，AT 命令收发测试（ 编写 AT 收发测试工具 ），API 接口测试，CTS 测试等。
+    2) Write necessary tools (JavaFX window tool, Python script tool, Shell script tool, Apk tool);
 
-    4）部分测试用例编写与功能测试。
+    3) Conduct memory leak test, AT command transceiver test (write [AT transceiver test tool](https://github.com/tangyiming/ATie)), API interface test, CTS test, etc.
 
+  - **2015.06 ~ 2016.10  Nanjing bingqian information technology co. LTD -  Java Web Developer**
 
+    Main work：
+    1) Fix system bugs and deal with problems of test feedback, mainly problems of system functions and SQL statements.
 
-  - **2015.06 ~ 2016.10  南京秉谦信息科技有限公司  Java Web 开发**
+    2) Develop personalized functional modules for system customization requirements of various universities.
 
-    主要工作内容：
+    3) Maintain system database (Oracle SQL).
 
-    1）修复系统 Bug,处理测试反馈的问题，主要有系统功能的问题，有 SQL 语句的问题。
-
-    2）开发各高校系统定制需求个性化功能模块。
-
-    3）维护系统数据库信息（ Oracle SQL ）。
-
-    4）远程服务器系统部署实施。
-
-
+    4) Remote server system deployment and implementation.
