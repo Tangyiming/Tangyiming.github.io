@@ -5,7 +5,6 @@ date: 2019-12-08
 published: true
 tags: ['ebook', 'reading','plan']
 series: false
-cover_image: ./images/janko-ferlic-specialdaddy-sfL_QOnmy00-unsplash.jpg
 canonical_url: false
 description: "鸟欲高飞先振翅,人求上进先读书。——李若禅"
 ---
@@ -38,14 +37,3 @@ description: "鸟欲高飞先振翅,人求上进先读书。——李若禅"
 ## Self Growth
 
 📖 7 Habits Of Highly Effective People
-
-
-
-
-
-
-
-
-
-
-
