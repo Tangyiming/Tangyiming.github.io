@@ -11,7 +11,7 @@ published: false
 tags: ['', '']
 series: false
 # 图片封面
-cover_image: ./images/janko-ferlic-specialdaddy-sfL_QOnmy00-unsplash.jpg
+cover_image: ./images/decorating-my-laptop.jpg
 canonical_url: false
 # 一句话描述
 description: ""
