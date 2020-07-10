@@ -1,11 +1,5 @@
 # Notice
 
-## Node
-Version: `v10.x.x`
-
-## Package manager
-Yarn
-
 ## Deploy by gh-pages
 I use the master branch for statics files
 so add this two lines into scripts:
