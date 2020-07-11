@@ -11,7 +11,7 @@
 </template>
 
 <page-query>
-query Tag ($id: String!) {
+query Tag ($id: ID!) {
   tag (id: $id) {
     title
     belongsTo {
@@ -23,7 +23,6 @@ query Tag ($id: String!) {
             date (format: "D. MMMM YYYY")
             timeToRead
             description
-            coverImage (width: 860, blur: 10)
             content
           }
         }
@@ -32,7 +31,6 @@ query Tag ($id: String!) {
   }
 }
 </page-query>
-
 <script>
 import Author from '~/components/Author.vue'
 import PostCard from '~/components/PostCard.vue'
@@ -51,4 +49,3 @@ export default {
 <style lang="scss">
 
 </style>
-

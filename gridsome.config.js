@@ -1,4 +1,4 @@
-// This is where project configuration and plugin options are located. 
+// This is where project configuration and plugin options are located.
 // Learn more: https://gridsome.org/docs/config
 
 // Changes here requires a server restart.
@@ -7,7 +7,12 @@
 module.exports = {
   siteName: 'blog by Eamon',
   siteDescription: 'While the world sleep I dream',
-  siteUrl: 'https://tangyiming.github.io',
+
+  templates: {
+    Post: '/:title',
+    Tag: '/tag/:id'
+  },
+
   plugins: [
     {
       // Create posts from markdown files
@@ -15,12 +20,12 @@ module.exports = {
       options: {
         typeName: 'Post',
         path: 'content/posts/*.md',
-        // route: '/:slug',
+        route: '/:slug',
         refs: {
           // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
           tags: {
             typeName: 'Tag',
-            route: '/tag/:id',
+            // route: '/tag/:id',
             create: true
           }
         }
