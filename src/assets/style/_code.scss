@@ -16,10 +16,10 @@ pre {
 }
 
 code {
-  background-color: var(--bg-code);
-  border: 1px solid var(--border-color);
-  font-size: .85em;
-  padding: .2em .5em;
+  //background-color: var(--bg-code);
+  //border: 1px solid var(--border-color);
+  font-size: 1em;
+  //padding: .2em .5em;
 }
 
 code[class*="language-"],
@@ -84,6 +84,10 @@ pre[class*="language-"] {
 :not(pre) > code[class*="language-"] {
 	border-radius: var(--radius);
 	white-space: normal;
+	background-color: var(--bg-code);
+	border: 1px solid var(--border-color);
+	font-size: .85em;
+	padding: .2em .5em;
 }
 
 .token.comment,

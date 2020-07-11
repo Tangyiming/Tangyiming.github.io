@@ -1,9 +1,8 @@
 ---
 # 文章标题，设置path时可以用中文
-# title: 优雅的部署github pages博客
+title: 优雅的部署github pages博客
 # 手动指定文章url path，不可以含空格等
-# path: how-to-deploy-blog-to-github-pages
-title: how-to-deploy-blog-to-github-pages
+path: how-to-deploy-blog-to-github-pages
 # 日期
 date: 2019-12-09
 # 要不要在目录列表显示
