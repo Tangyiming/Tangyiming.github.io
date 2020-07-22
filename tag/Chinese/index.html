@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html data-html-server-rendered="true" lang="en" data-vue-tag="lang">
+  <head>
+    <title data-vue-tag="true">Hello, world! - blog by Eamon</title><meta name="gridsome:hash" content="0d1a424fbed07ea6e4335c37cf8992db5e2199df"><meta data-vue-tag="true" charset="utf-8"><meta data-vue-tag="true" name="generator" content="Gridsome v0.7.19"><meta data-vue-tag="true" data-key="viewport" name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta data-vue-tag="true" data-key="format-detection" name="format-detection" content="telephone=no"><meta data-vue-tag="true" data-key="description" name="description" content="While the world sleep I dream"><link data-vue-tag="true" rel="icon" href="data:,"><link data-vue-tag="true" rel="icon" type="image/png" sizes="16x16" href="/assets/static/favicon.ce0531f.941055146bc7e4fecb7d710c9e51025e.png"><link data-vue-tag="true" rel="icon" type="image/png" sizes="32x32" href="/assets/static/favicon.ac8d93a.941055146bc7e4fecb7d710c9e51025e.png"><link data-vue-tag="true" rel="icon" type="image/png" sizes="96x96" href="/assets/static/favicon.b9532cc.941055146bc7e4fecb7d710c9e51025e.png"><link data-vue-tag="true" rel="apple-touch-icon" type="image/png" sizes="76x76" href="/assets/static/favicon.f22e9f3.941055146bc7e4fecb7d710c9e51025e.png"><link data-vue-tag="true" rel="apple-touch-icon" type="image/png" sizes="152x152" href="/assets/static/favicon.62d22cb.941055146bc7e4fecb7d710c9e51025e.png"><link data-vue-tag="true" rel="apple-touch-icon" type="image/png" sizes="120x120" href="/assets/static/favicon.1539b60.941055146bc7e4fecb7d710c9e51025e.png"><link data-vue-tag="true" rel="apple-touch-icon" type="image/png" sizes="167x167" href="/assets/static/favicon.dc0cdc5.941055146bc7e4fecb7d710c9e51025e.png"><link data-vue-tag="true" rel="apple-touch-icon" type="image/png" sizes="180x180" href="/assets/static/favicon.7b22250.941055146bc7e4fecb7d710c9e51025e.png"><link rel="preload" href="/assets/css/0.styles.dd589af0.css" as="style"><link rel="preload" href="/assets/js/app.05eac147.js" as="script"><link rel="preload" href="/assets/js/page--src-templates-tag-vue.75058138.js" as="script"><link rel="prefetch" href="/assets/js/page--node-modules-gridsome-0-7-19-gridsome-app-pages-404-vue.7aa53d9f.js"><link rel="prefetch" href="/assets/js/page--src-pages-index-vue.2302dbf6.js"><link rel="prefetch" href="/assets/js/page--src-templates-post-vue.3e240f59.js"><link rel="stylesheet" href="/assets/css/0.styles.dd589af0.css"><noscript data-vue-tag="true" ><style>.g-image--loading{display:none;}</style></noscript>
+  </head>
+  <body data-vue-tag="">
+    <script>
+      // Add dark / light detection that runs before Vue.js load. Borrowed from overreacted.io
+      (function() {
+        window.__onThemeChange = function() {};
+        function setTheme(newTheme) {
+          window.__theme = newTheme;
+          preferredTheme = newTheme;
+          document.body.setAttribute('data-theme', newTheme);
+          window.__onThemeChange(newTheme);
+        }
+
+        var preferredTheme;
+        try {
+          preferredTheme = localStorage.getItem('theme');
+        } catch (err) { }
+
+        window.__setPreferredTheme = function(newTheme) {
+          setTheme(newTheme);
+          try {
+            localStorage.setItem('theme', newTheme);
+          } catch (err) {}
+        }
+
+        var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        darkQuery.addListener(function(e) {
+          window.__setPreferredTheme(e.matches ? 'dark' : 'light')
+        });
+
+        setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
+      })();
+    </script>
+
+    <div id="app" data-server-rendered="true"><header class="header"><div class="header__left"><a href="/" class="logo active"><span class="logo__text">
+    ← blog by Eamon
+  </span></a></div><div class="header__right"><button role="button" aria-label="Toggle dark/light" class="toggle-theme"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></button></div></header><main class="main"><h1 class="tag-title text-center space-bottom">
+    # Chinese
+  </h1><div class="posts"><div class="post-card content-box"><div class="post-card__header"><!----></div><div class="post-card__content"><h2 class="post-card__title">在gridsome中使用非英语做文章标题的方法</h2><p class="post-card__description">我的被官方采纳的解决办法...</p><div class="post-meta post-card__meta">
+   Posted 22. July 2020.
+   <strong>1 min read.</strong></div><div class="post-tags post-card__tags"></div><a href="/gridsome/" class="post-card__link">Link</a></div></div></div></main><footer class="footer"><span class="footer__copyright">Copyright © 2020 Eamon Tang. All rights reserved. </span></footer></div>
+    <script>window.__INITIAL_STATE__={"data":{"tag":{"title":"Chinese","belongsTo":{"edges":[{"node":{"title":"在gridsome中使用非英语做文章标题的方法","path":"\u002Fgridsome\u002F","date":"22. July 2020","timeToRead":1,"description":"我的被官方采纳的解决办法...","content":"\u003Cp\u003EGridsome时不支持非英文标题的，因为他是默认根据title生成路径的，对于非英文字符，就无法支持了。\u003C\u002Fp\u003E\n\u003Cp\u003E所以我的解决方法是注释掉应用配置项中slug的生产配置，采用在文章中指定路径的方式，在生成路径时被使用。\u003C\u002Fp\u003E\n\u003Cp\u003E具体参考我在issue的回答：\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Ca href=\"https:\u002F\u002Fgithub.com\u002Fgridsome\u002Fgridsome\u002Fissues\u002F956#issuecomment-581086130\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"\u003Ehttps:\u002F\u002Fgithub.com\u002Fgridsome\u002Fgridsome\u002Fissues\u002F956#issuecomment-581086130\u003C\u002Fa\u003E\u003C\u002Fp\u003E\n"}}]}}},"context":{}};(function(){var s;(s=document.currentScript||document.scripts[document.scripts.length-1]).parentNode.removeChild(s);}());</script><script src="/assets/js/app.05eac147.js" defer></script><script src="/assets/js/page--src-templates-tag-vue.75058138.js" defer></script>
+  </body>
+</html>
