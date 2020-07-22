@@ -8,14 +8,14 @@
 		</h1>
 
 		<p class="author__intro">
-			质量保障
+			测试开发专家
 		</p>
 
 		<p class="author__links">
 			<!-- <a href="//twitter.com/gridsome">Follow on Twitter</a> -->
 
 			<a href="//github.com/Tangyiming">GitHub</a>
-			<!-- <a href="/my-resume">Resume</a> -->
+			<a href="//linkedin.com/in/%E4%B8%80%E9%B8%A3-%E5%94%90-711a01193/">Linkedin</a>
 			<!-- <a class="author__links__qrcode" href="javascript:">一门性能课（公众号）</a> -->
 		</p>
 
