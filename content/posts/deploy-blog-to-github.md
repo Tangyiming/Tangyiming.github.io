@@ -12,7 +12,7 @@ tags: ['gh-pages', 'deploy']
 series: false
 canonical_url: false
 # 一句话描述
-description: "几个你可能也会遇到的问题～"
+description: "几个你可能也会遇到的问题~"
 ---
 这里分享下我使用[Gridsome](https://gridsome.org/)建博客并使用[GitHub Pages](https://pages.github.com/)免费托管中遇到了几个作为新手一定会遇到的问题。
 
